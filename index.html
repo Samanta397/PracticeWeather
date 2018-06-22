@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>myWeather</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Syncopate:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Kameron" rel="stylesheet">
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
+   <link rel="stylesheet" href="css/bootstrap-datetimepicker.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body >
+<div class="wrapper">
+	<div class="header">
+		<div class="logo">
+			<img src="images/tuchka.png" width="130" height="80" >
+			<h1>WEATHER</h1>
+			<div id="nameCity"></div>
+  	  	</div> 
+  	 	 <div class="form">
+  	  		<h3>Find a forecast</h3>
+  	  			<div class="form-row">
+  	  				<label for="form-city">City</label>
+  	  				<input  type="text" name="city" id="city"  placeholder="City name" >
+  	  			</div>
+  	  			<div class="form-row">
+  	  				<label for="form-data">Data</label>
+  	  				<input  type="text" name="dataDay" id="dataDay"  />
+  	  			</div>
+  	  		<button id="getWeatherForecast">Get Weather</button>
+  	  	 </div>
+	</div>
+  <div id="error"></div>
+	<div class="center">
+  		<div  class="fiveDaysForecast">
+  		   <div id="title" style="text-align:center" ></div>   
+           <table>
+             <thead id="titleDataDay">
+                
+             </thead>
+             <tbody id="forDayForecast">
+               
+             </tbody>
+           </table>      
+  		</div>
+
+      <div id="myMap" style="width:450px;height:420px;" ></div><!--style="width:350px;height:300px;"-->
+  	</div>	
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=AIzaSyAykQsE_e5fPAGnOVeh92Ao0wyUvPqlTjU"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="js/moment.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.17.4/lodash.min.js"></script>
+<script type="text/javascript" src="js/forecast.js"></script>
+
+</body>
+</html>

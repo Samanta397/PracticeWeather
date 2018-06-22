@@ -1,0 +1,101 @@
+
+.wrapper{
+
+	background: #0000FF;
+    background: linear-gradient(to bottom right, #0000FF, #87CEFA);
+    padding: 10px;
+    border: 1px solid #333;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.header{
+	
+	width: 100%;
+	max-width: 1200px;
+	min-width: 430px;
+	margin: 0 auto 30px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	box-sizing: border-box; 	
+
+}
+.logo{
+    flex: 1;
+
+	display: flex;
+}
+h1{
+	color: #FFFFFF;
+	font-family: 'Syncopate', sans-serif;
+	font-size: 36px;
+}
+h3{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #2F4F4F;
+	font-family: 'Kameron', serif;
+}
+.form{
+border: 2px solid #473C8B;               /*DELETE*/
+	border-radius:20px 20px 20px 20px;    /*DELETE*/
+	background: 	#BCEE68;
+	padding:  10px;
+}
+label{
+	color: #696969;
+	font-family: 'Kameron', serif;
+}
+input{
+	width: 300px; 
+}
+.form-row{
+	margin: 3px ;
+ 	margin-bottom: 8px;
+ 	overflow: hidden;
+}
+button{
+	 display: inline-block;
+    line-height: 20px;
+    position: relative;
+    padding: 0 1rem;
+   margin: auto;
+   left:35%;
+}
+.center{
+
+	width: 100%;
+	max-width: 1200px;
+	min-width: 430px;
+	height: 100%;
+	margin: 0px auto 30px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+	box-sizing: border-box; 	
+
+
+}
+#myMap{
+
+	border-radius:20px 20px 20px 20px;    /*DELETE*/
+    
+	font-size: 20px;
+	font-family: 'Kameron', serif;
+	line-height:0;
+	margin: 5px;
+
+}
+.fiveDaysForecast{
+	box-sizing: border-box; 
+	
+}
+#title{
+	margin: 2px;
+}
+
